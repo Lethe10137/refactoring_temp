@@ -1,18 +1,19 @@
 <template>
   <div id="app">
-    <PostList/>
+    <CreatePostVue/>
+    <PostListVue/>
   </div>
 </template>
 
 <script>
 import PostListVue from './components/PostList.vue';
-import PostList from './components/PostList.vue';
+import CreatePostVue from './components/CreatePost.vue';
 export default {
     name: "App",
-    component: {
-        PostListVue
-    },
-    components: { PostList }
+    components: {
+      PostListVue,
+      CreatePostVue 
+      }
 }
 </script>
 
